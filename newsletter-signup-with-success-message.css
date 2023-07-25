@@ -1,0 +1,111 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+    max-width: 400px;
+}
+
+.form {
+    display: none;
+    flex-direction: column;
+}
+
+.illustration {
+    content: url("./assets/images/illustration-sign-up-mobile.svg");
+    width: 100%;
+}
+
+.content  {
+    padding: 5%;
+    font-size: 16px;
+    font-family: Roboto;
+    color: hsl(234, 66%, 20%);
+
+}
+
+.content h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.content ul {
+    list-style-type: none;
+    line-height: 1.5em;
+    padding-left: 0;
+}
+
+.content li {
+    padding: 2% 3% 2% 0%;
+}
+
+.content li:before {
+    content: url('./assets/images/icon-list.svg');
+    float: left;
+    padding-right: 5%;
+
+}
+
+form {
+    padding: 5% 0;
+}
+form * {
+    display: block;
+}
+
+form label {
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+form input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 7%;
+    font-size: 1em;
+    border-color: hsl(231, 7%, 60%);
+    border-width: 1px;
+    margin: 4% 0;
+    border-radius: 8px;
+}
+
+form input::placeholder {
+    color: hsl(231, 7%, 60%);
+}
+
+button {
+    margin: 8% 0;
+    width: 100%;
+    padding: 8%;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    background: hsl(234, 29%, 20%);
+}
+
+button:hover {
+    background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(30, 100%, 67%));
+    box-shadow: 0px 10px 30px 0px hsla(4, 100%, 67%, 50%);
+    cursor: pointer;
+}
+
+
+.success-icon {
+    content: url('assets/images/icon-success.svg')
+}
+.success {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.success .content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-80%);
+}
+
+.success button {
+    position: relative;
+    top: 50%;
+}
