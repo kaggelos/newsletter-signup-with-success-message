@@ -6,7 +6,7 @@
     max-width: 400px;
 }
 
-.form {
+#form {
     display: none;
     flex-direction: column;
 }
@@ -73,7 +73,7 @@ form input::placeholder {
     color: hsl(231, 7%, 60%);
 }
 
-button {
+.button {
     margin: 8% 0;
     width: 100%;
     padding: 8%;
@@ -83,7 +83,7 @@ button {
     background: hsl(234, 29%, 20%);
 }
 
-button:hover {
+.button:hover {
     background: linear-gradient(to right, hsl(4, 100%, 67%), hsl(30, 100%, 67%));
     box-shadow: 0px 10px 30px 0px hsla(4, 100%, 67%, 50%);
     cursor: pointer;
@@ -93,19 +93,19 @@ button:hover {
 .success-icon {
     content: url('assets/images/icon-success.svg')
 }
-.success {
+#success {
     display: flex;
     flex-direction: column;
     height: 100%
 }
 
-.success .content {
+#success .content {
     position: relative;
     top: 50%;
     transform: translateY(-80%);
 }
 
-.success button {
+#success .button {
     position: relative;
     top: 50%;
 }
