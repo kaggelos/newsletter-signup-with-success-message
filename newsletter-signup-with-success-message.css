@@ -53,6 +53,7 @@ form * {
 form label {
     font-size: 0.9em;
     font-weight: 700;
+    display: inline-block;
 }
 
 form input {
@@ -109,6 +110,13 @@ form input::placeholder {
 #success .button {
     position: relative;
     top: 50%;
+}
+
+#error {
+    display: none;
+    content: "Valid email required";
+    float: right;
+    color: hsl(4, 100%, 67%);
 }
 
 @media screen and (min-width: 768px) {

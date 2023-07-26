@@ -41,11 +41,10 @@
             <li>Measuring to ensure updates are a success</li>
             <li>And much more!</li>
           </ul>
-          <form>
-            <label for="email">Email address</label>
+          <form id="newsletter">
+            <label for="email">Email address</label><label for="email" id="error">Valid email required</label>
             <input id="email" type="email" name="email" placeholder="email@company.com" required>
-
-            <input type="submit" onclick="showMessage()" value="Subscribe to monthly newsletter" class="button">
+            <button type="button" onclick="validateForm()" class="button">Subscribe to monthly newsletter</button>
           </form>
         </div>
       </div>
